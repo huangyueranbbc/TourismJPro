@@ -1,0 +1,156 @@
+﻿
+/*----------- createProduct ---------------*/
+.createProduct {
+    float: left;
+	width:99%;
+	min-width:640px;
+	min-height: 1430px;
+	height:auto;
+    position: relative;
+    margin-top: 12px;
+	border:2px solid #aaa;
+}
+
+.createProduct .title {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+	border-bottom:2px solid red;
+}
+
+.createProduct .title span {
+    float: left;
+    width: 260px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #ddd;
+	text-align:left;
+}
+
+.createProduct .information {
+	float: left;
+	width:99%;
+	min-height: 100px;
+	height:auto;
+	border:1px solid #aaa;
+	margin: 25px 0 0 10px;
+}
+.information div {
+	float:left;
+	clear:both;
+}
+
+.information .subtitle {
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+	border-bottom:2px solid #800000;
+}
+
+.information .subtitle span {
+    float:left;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align:center;
+	font-weight: bold;
+	font-size: 18px;
+	font-weight: bold;
+	color:#fff;
+	background-color: #800000;
+}
+
+
+
+.information table { 
+	width:99%;
+	float: left;
+	max-width: 880px;
+	min-width:700px;
+	margin:10px 0 0 0;	
+	clear:both;
+	border:2px solid #aaa;
+}
+
+.information table tr td { 
+	border-bottom:1px solid #aaa;
+	float:left;
+	width: 300px;
+	text-align: right;
+}
+
+.information table tr .btitle { 
+	width: 100px;
+	text-align: right;
+}
+
+.information table .black { 
+	width: 200px;
+}
+
+.information .images {
+  margin-top:5px;
+  width: 450px;
+  border:2px solid #aaa;
+}
+
+.information .images span {
+  clear:both;
+  --border:2px solid #aaa;
+  display: block;
+  margin:10px 0;
+}
+
+
+.information .spec {
+
+width:600px;
+
+	clear:both;
+	float:left;
+	--border:2px solid #aaa;
+	margin: 8px 0;
+}
+
+.information .spec span {
+	width: 250px;
+	display: inline-block;
+	margin-right: 10px;
+	--border:1px solid #aaa;
+}
+
+.information .setting {
+	clear:both;
+	float:left;
+	margin: 8px 0;
+}
+
+.information .setting span {
+	width: 300px;
+	display: inline-block;
+	--border:1px solid #aaa;
+}
+
+.information #button {
+	margin:50px 0 0 340px;
+	width: 500px;
+	--border:3px solid #aaa;
+}
+.information #button input {
+	margin: 0 20px;
+	border: medium none;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+    width: 158px;
+}
+
+.information .submitbutton {
+    background-color: #cc0000;
+	color: #fff;
+}

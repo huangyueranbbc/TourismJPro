@@ -1,0 +1,209 @@
+
+/*--------------- list-left  ---------------*/
+
+#list-left {
+	width:100%;
+	float:left;
+	border-top:2px solid #cc0000;
+	clear:both;
+	overflow:hidden;
+}
+
+#list-left  .title {
+    width:840px;
+	float:left;
+	height: 35px;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 5px 0 -5px 0;
+}
+
+/*--------------- productAll  ---------------*/
+#list-left .productAll {
+    width:100%;
+	float:left;
+	height: 81px;
+	background-color: #fff;    
+	margin: 5px 0;
+	border:2px solid #aaa;
+}
+
+.productAll #maininfo {
+    width:100%;
+	height: 30px;
+	float:left;
+	margin-bottom:10px;
+	border-bottom:2px solid #cc0000;
+}
+
+#maininfo #title {
+    float:left;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align:center;
+	font-weight: bold;
+	color:blue;
+	background-color: #99FF99;
+}
+
+.productAll #maininfo span {
+    float: right;
+    width: 370px;
+	height: 20px;
+	margin: 10px 25px 0px 25px;
+}
+
+.productAll #searchcondition {
+	width:99.6%;
+	float:left;
+	height: 35px;
+	background-color: #ddd;
+	border:2px solid #ddd;
+	clear:both;
+	overflow:hidden;
+}
+
+#searchcondition ul{
+	float:left;
+	width: 300px;
+	margin: 10px 0 0 0;
+}
+
+/*--------------- list-right  ---------------*/
+#list-right {
+	width:125px;
+	float:right;
+	margin: 2px;
+	border:2px solid #aaa;
+	overflow:hidden;
+}
+
+#list-right .right1 {
+	float:left;
+	margin-bottom: 15px;
+	overflow:hidden;
+}
+
+#list-right .right1 .title {
+	text-align:center;
+	font-weight: bold;
+	background-color: #aaa;
+}
+
+
+/*---------------tbox  ---------------*/
+.tbox{
+	float: left;
+	text-align:center;
+	margin: 10px 15px;
+	width:200px;
+	font-size: 14px;
+	overflow:hidden;
+	border:1px solid #ddd;
+}
+
+.unit-pic {
+
+}
+
+.tbox .markprice {
+	color:#666;
+}
+
+.tbox .saleprice div {
+	float:left;
+	font-size: 20px;
+	color:#CC0000;
+	height: 35px;
+	line-height: 35px;
+}
+
+.tbox .saleprice .satisfaction {
+	float:right;
+	font-size: 16px;
+	color:#E63F00;
+}
+
+/*--------------- pagination  ---------------*/
+.pagination {
+   clear: both;
+    float:left;
+    width: 980px;
+	height: 25px;
+    padding: 1px 0;
+	margin: 20px 0;
+    text-align: center;
+	vertical-align: middle;
+	--border-top:2px solid #aaa;
+}
+
+.pagination .blackarea {
+	float:left;
+	width: 180px;
+	margin-rigth:100px;
+}
+
+.pagination #pagelink {
+	float:left;
+	margin-top:3px;
+	border:2px solid #aaa;
+	display: inline;
+}
+
+.pageinfo {
+	float:left;
+	width:120px;	
+	margin: 2px 6px 0 10px;
+}
+
+.pageform {
+	float:left;
+	display: inline;	
+	margin:0;
+}
+
+.pagination .active_tnt_link {
+    background-color: #CCEEFF;
+    border: 1px solid #BBDDFF;
+    color: #0072BC;
+    cursor: default;
+    margin-left: 5px;
+    padding: 4px 7px;
+    text-decoration: none;
+}
+
+.pagination a.active_a:link, .pagination a.active_a:visited {
+    background-color: #F5F5F5;
+    border: 1px solid #EBEBEB;
+    color: #0072BC;
+    font-weight: normal;
+    margin-left: 5px;
+    padding: 4px 7px;
+    text-decoration: none;
+    width: 22px;
+}
+
+
+.searchbox {
+   clear: both;
+   float:left;
+    width: 980px;
+	height: 40px;
+    margin: 10px;
+	font-size: 24px;
+    text-align: center;
+	--border: 1px solid #EBEBEB;
+}
+
+.searchbox .searchinput {
+    width: 300px;height: 30px;
+	font-size: 20px;
+}
+
+.searchbox .searchsubmit {
+    width: 50px;height: 35px;
+	font-size: 16px;
+	font-weight: bold;;
+	vertical-align: middle;
+}

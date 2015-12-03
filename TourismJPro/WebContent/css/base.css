@@ -1,0 +1,238 @@
+﻿/*---------------------------------------
+				default-base 
+-----------------------------------------*/
+html, body, div, a, span, h1, h2, h3, h4 {
+    color: #333333;
+    font: 14px Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color:#0086FF;
+    text-decoration: none;
+}
+
+a:hover { 
+	font-weight: bold;
+	color:red;
+}
+
+ul {
+    list-style-type: none;
+}
+ul li {
+    display: inline;
+}
+.f-left {
+    float:left !important;
+}
+.f-right {
+    float:right !important;
+}
+
+/*---------------------------------------
+				structure-base
+-----------------------------------------*/
+#wrapper {
+    position: relative;
+    width: 985px;
+    left:50%;
+	margin-left:-492px;
+	margin: 10px 0px 12px -492px;
+}
+
+#header {
+    float: left;
+    width: 100%;
+	height: 120px;
+    position: relative;
+    margin: 5px 0;
+	--border:2px solid #aaa;
+}
+
+#header .link {
+	float: left;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin: 5px 0 15px 0;
+	background-color: #F5F5F5;
+	--border:2px solid #aaa;
+}
+
+#header .link .left {
+    float: left;
+	height: 25px;
+	line-height: 25px;
+	margin-left: 15px;
+}
+
+#header .link .right {
+    float: right;
+	margin: -2px 15px 0 0;
+}
+
+#header .logo {
+    float:left;
+    width: 295px;
+    height: 62px;
+    overflow: hidden;
+    text-indent: -100px;
+    background: url("../images/logo_ch.png") no-repeat scroll transparent;
+	--border:2px solid #aaa;
+}
+
+#header #search {
+    float: left;
+	margin: 15px 0 0 10px;
+	height: 35px;
+	border:1px solid #EE7700;
+}
+
+#search #inputbox {
+	float: left;
+	width: 310px;
+	height: 35px;
+	line-height: 35px;	
+	font-size: 16px;	
+	color: red;
+	border:1px solid #EE7700;
+	padding: 3px 9px 0;
+}
+
+#search #search_button {
+	color: blue;
+	background-color: #EE7700;
+	cursor: pointer;
+	float: left;
+	width: 106px;
+	height: 35px;
+	font-size: 18px;
+	border:1px solid #EE7700;
+	font-weight: bold;
+}
+
+#header .tocart {
+	float: right;
+	margin: 10px -3px; 
+	width: 225px;
+	height: 45px;
+	-border:2px solid #aaa;
+}
+
+.tocart .cartimage {
+	float:left;
+    width: 50px;
+	height: 45px;
+    overflow: hidden;
+    background: url("../images/cart1.jpg") no-repeat scroll transparent;
+}
+
+.tocart .cart_button {
+	color: #FFFFFF;
+	background-color: #B22222;
+	width: 60px;
+	height: 27px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#navmenu {
+    float: left;
+    width: 100%;
+	height: 47px;
+	height: 47px;
+    position: relative;
+	margin: 5px 0;
+	background-color: while;
+	border:2px solid #aaa;
+}
+
+#navmenu  ul {
+	color: #aaa;
+	margin: -5px 0 0 -25px;
+}
+
+#navmenu  ul li {
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+	--background-color: green;
+	width: 200px;
+}
+
+
+#navmenu  ul li  a {
+	font-size: 24px;
+	font-weight: bold;
+	color: green;
+}
+
+#navmenu  ul li a:hover { 
+	font-size: 26px;
+	font-weight: bold;
+	color:red;
+}
+
+
+#main {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2px;
+	--border:2px solid #aaa;
+}
+
+#navigate {
+	float: left;
+    width: 100%;
+	height: 160px;
+	margin-bottom:10px;
+	--border:5px solid #aaa;
+}
+
+#navigate div {
+	float:left;
+	width:130px;
+	height: 150px;
+	margin:10px;
+	border-right:1px solid #aaa;
+}
+
+#navigate ul {
+    margin:0 0 0 0;
+	list-style-type: none;
+}
+
+
+#navigate  .title {
+	--font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+}
+
+#navigate ul li {
+    margin-top:10px;
+	display: block;
+}
+
+
+#footer {
+    float: left;
+    width: 100%;
+	height: 90px;
+    text-align: center;
+	margin-bottom:10px;
+	border-top:2px solid #aaa;
+}
+
+.license {
+    color: #666666;
+    float: left;
+    width: 100%;
+    text-align: center;
+}

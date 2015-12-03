@@ -1,0 +1,258 @@
+
+/*---------- produc-main ---------*/
+#main .product-main {	
+	width:980px;
+	height:430px;
+	margin:5px auto;
+	border:2px solid #aaa;
+	overflow:hidden;
+}
+
+#main .product-main .title {
+    width:840px;
+	float:left;
+	height: 35px;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 -5px 0;
+}
+
+#main .product-main .left-small {	
+	float:left;
+	width:95px;
+	margin-right:5px;
+	clear:both;
+	border:1px solid #aaa;
+}
+
+#main .product-main .left-small ul {
+	margin:5px 5px 5px -30px;
+
+}
+
+#main .product-main .left-small li .icon {
+	margin-top:5px;
+	margin-left:-8px;
+	border:1px solid #ddd;	
+}
+
+#main .product-main .left-big {	
+	float:left;
+	width:485px;
+	height:370px;
+	border:1px solid #aaa;
+}
+
+.left-big #icon {	
+	width:485px;
+	height:370px;
+}
+
+#main .product-main .right-info {	
+	float:right;
+	margin-right:5px;
+	width:372px;
+	height:390px;
+	--background-color: ;
+	border:1px solid #aaa;
+}
+
+#main .product-main .right-info div {	
+	margin:10px;
+}
+
+
+ .saleprice {
+	font-size: 22px;
+	color:#CC0000;
+	height: 35px;
+	line-height: 35px;
+	color:red;
+}
+
+.right-info .keyInfo {
+	width:95%;
+	height:45px;
+	line-height:45px;
+	background-color: #FFFFF0 ;
+	
+	border:1px solid #ddd;
+}
+
+.right-info .keyInfo div { 
+	font-size: 18px;
+	font-weight: bold;
+	color:#E63F00;
+}
+
+.purchase {
+	margin:5px;
+	height:160px;
+	background-color: #F5F5F5 ;
+}
+
+.purchaseoption {
+	margin:15px;
+	background-color: ;
+}
+
+.purchase .purchase-button {
+    --background: url("../images/bnt_cat.gif")  no-repeat scroll transparent;
+    border: medium none;
+	background-color: #EE7700;
+	color:#fff;
+    float: left;
+    font-size: 22px;
+	font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    width: 164px;
+}
+
+/*---------- product-info ---------*/
+#main .product-info {	
+	width:980px;
+	margin:5px auto;
+	border:2px solid #aaa;
+	overflow:hidden;
+}
+
+#main .product-info .list-left {
+	width:125px;
+	float:left;
+	margin: 2px;
+	border:2px solid #aaa;
+	overflow:hidden;
+}
+
+.list-left .left1 {
+	float:left;
+	margin-bottom: 15px;
+	overflow:hidden;
+}
+
+#main .product-info .product-deltail {
+	width:99%;
+	float:right;
+	margin: 10px;
+	border:2px solid #aaa;
+	overflow:hidden;
+}
+
+.product-deltail .prdduct-relation {
+	float:left;
+	width:99%;
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #0aa344;
+}
+
+.prdduct-relation div {
+	float:left;
+	width:150px;
+	margin:0 5px;
+	height:30px;
+	line-height:30px;
+	font-size: 22px;
+	font-weight: bold;
+	color:#fff;
+	text-align: center;
+	--border:1px solid blue;
+}
+
+.product-deltail .description {
+	width:99%;
+	height:160px;
+	float:left;
+	border:1px solid #aaa;
+}
+
+.product-deltail .attribute {
+	width:99%;
+	height:auto;
+	float:left;
+	border:2px solid #aaa;
+}
+
+.comment #reply #content{
+	float:left;
+	border:2px solid #0aa344;
+}
+
+.comment .re-text {
+	width:99%;
+	float:left;
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #0aa344;
+}
+
+
+.comment .re-text div {
+	float:left;
+	width:150px;
+	margin:5px;
+	height:30px;
+	line-height:30px;
+	font-size: 22px;
+	font-weight: bold;
+	color:#fff;
+	text-align: center;
+	--border:1px solid blue;
+}
+
+.comment #reply-list {
+	width:99%;
+	height:80px;
+	float:left;
+	margin:5px;
+	border:1px solid #aaa;
+}
+
+.comment #reply-list div{
+	float:left;
+}
+
+#reply-list .name div {
+	width:100%;
+	height:40px;
+	line-height:40px;
+	float:left;
+	text-align: center;
+	font-weight: bold;
+	border-top:2px solid #66FF66;
+}
+
+
+
+.comment #reply-list .content2 {
+	float:left;
+	width:700px;
+	height:100%;
+	margin-right:5px;
+	border:1px solid #66FF66;
+}
+
+/*---------------tbox  ---------------*/
+.tbox{
+	float: left;
+	text-align:center;
+	margin: 4px;
+	width:200px;
+	font-size: 14px;
+	overflow:hidden;
+}
+
+.tbox .markprice {
+	color:#666;
+}
+
+.tbox .markprice span {
+	text-decoration:line-through;
+}
+
+.tbox .saleprice {
+	color:#CC0000;
+}

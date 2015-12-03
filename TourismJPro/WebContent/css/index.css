@@ -1,0 +1,88 @@
+﻿
+/*---------------------------------------
+				main-list
+-----------------------------------------*/
+
+#main-list {
+    width:99%;
+	float:left;
+	height: 335px;
+    border:2px solid #aaa;
+	margin: 5px 0;
+}
+
+#main-list .title {
+	height: 35px;
+	background-color: #99FF99;
+	border-bottom:2px solid #aaa;
+}
+
+#main-list .title .category {
+	float: left;
+	width:150px;
+	height: 35px;
+	line-height: 35px;
+	text-align:center;
+	font-size: 24px;
+	font-weight: bold;
+	color: blue;
+	
+}
+
+#main-list .title .subcat {
+	float: right;
+	width:450px;
+	height: 35px;
+	line-height: 35px;
+	text-align:center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+	--border:3px solid #aaa;
+}
+
+.title .subcat ul {
+	color: #aaa;
+	margin: 2px 0 0 -25px;
+}
+
+/*---------------tbox  ---------------*/
+
+
+
+.tbox{
+	float: left;
+	text-align:center;
+	margin: 4px 10px;
+	width:200px;
+	font-size: 14px;
+	overflow:hidden;
+	border:1px solid #ddd;
+}
+
+
+.unit-pic {
+
+}
+
+.tbox .markprice {
+	color:#666;
+}
+
+.tbox .markprice span {
+	text-decoration:line-through;
+}
+
+.tbox .saleprice div {
+	float:left;
+	font-size: 20px;
+	color:#CC0000;
+	height: 35px;
+	line-height: 35px;
+}
+
+.tbox .saleprice .satisfaction {
+	float:right;
+	font-size: 16px;
+	color:#E63F00;
+}
