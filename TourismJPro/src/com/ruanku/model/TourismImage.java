@@ -1,5 +1,6 @@
 package com.ruanku.model;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -13,7 +14,7 @@ public class TourismImage {
 	private int tourism_id; // 关联旅游信息的ID
 	private String big; // 大图路径
 	private String small; // 小图路径
-	private Date upload_time; // 上传时间
+	private Timestamp upload_time; // 上传时间
 	private Date last_modify; // 更新时间
 	private int orders; // 排序
 	private int del; // 是否删除，0表示未删除、1表示已删除
@@ -50,11 +51,11 @@ public class TourismImage {
 		this.small = small;
 	}
 
-	public Date getUpload_time() {
+	public Timestamp getUpload_time() {
 		return upload_time;
 	}
 
-	public void setUpload_time(Date upload_time) {
+	public void setUpload_time(Timestamp upload_time) {
 		this.upload_time = upload_time;
 	}
 

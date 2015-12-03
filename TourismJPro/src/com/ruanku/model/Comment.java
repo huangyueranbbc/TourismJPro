@@ -1,5 +1,6 @@
 package com.ruanku.model;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -15,7 +16,7 @@ public class Comment {
 	private String userName; // 用户评价的姓名
 	private int satisfaction; // 满意度 3满意(3分)；2一般(2分)；0不满意(0分) 总体满意度=总体/(评价总数*3)
 	private String content; // 用户评论内容
-	private Date createDate; // 创建时间 默认为当前时间
+	private Timestamp createDate; // 创建时间 默认为当前时间
 	private int del; // 是否删除 0未删除，1已删除
 
 	public int getID() {
@@ -66,11 +67,11 @@ public class Comment {
 		this.content = content;
 	}
 
-	public Date getCreateDate() {
+	public Timestamp getCreateDate() {
 		return createDate;
 	}
 
-	public void setCreateDate(Date createDate) {
+	public void setCreateDate(Timestamp createDate) {
 		this.createDate = createDate;
 	}
 

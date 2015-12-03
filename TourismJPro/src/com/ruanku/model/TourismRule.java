@@ -1,5 +1,6 @@
 package com.ruanku.model;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -15,10 +16,10 @@ public class TourismRule {
 	private Date tourismTime; // 出游时间
 	private float price; // 一个旅客出游的价钱
 	private String discount; // 优惠信息说明
-	private int status; // 规则状态 0可用，1不可用
+	private int status = 0; // 规则状态 0可用，1不可用
 	private String remark; // 备注
-	private Date modifyTime; // 管理员修改时间
-	private int del; // 是否删除 0未删除，1已删除
+	private Timestamp modifyTime; // 管理员修改时间 默认为当前时间
+	private int del = 0; // 是否删除 0未删除，1已删除
 
 	public int getID() {
 		return ID;
@@ -84,11 +85,11 @@ public class TourismRule {
 		this.remark = remark;
 	}
 
-	public Date getModifyTime() {
+	public Timestamp getModifyTime() {
 		return modifyTime;
 	}
 
-	public void setModifyTime(Date modifyTime) {
+	public void setModifyTime(Timestamp modifyTime) {
 		this.modifyTime = modifyTime;
 	}
 
@@ -98,6 +99,15 @@ public class TourismRule {
 
 	public void setDel(int del) {
 		this.del = del;
+	}
+
+	@Override
+	public String toString() {
+		return "TourismRule [ID=" + ID + ", tourism_id=" + tourism_id
+				+ ", deadline=" + deadline + ", tourismTime=" + tourismTime
+				+ ", price=" + price + ", discount=" + discount + ", status="
+				+ status + ", remark=" + remark + ", modifyTime=" + modifyTime
+				+ ", del=" + del + "]";
 	}
 
 }

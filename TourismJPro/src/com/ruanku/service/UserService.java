@@ -7,7 +7,7 @@ import com.ruanku.model.UserBo;
 import com.ruanku.utils.AppException;
 
 public class UserService {
-	// 创建userDao
+	// 准备userDao
 	private UserDao userDao = new UserDaoImpl();
 
 	/*
@@ -32,16 +32,17 @@ public class UserService {
 		return flag;
 	}
 
-	public UserBo login(String username,String password) throws AppException {
-		UserBo user=null;
+	public UserBo login(String username, String password) throws AppException {
+		UserBo user = null;
 		try {
-			user = userDao.findUserByNameAndPwd(username,password);
+			user = userDao.findUserByNameAndPwd(username, password);
 		} catch (AppException e) {
 			e.printStackTrace();
-			throw new AppException("com.ruanku.service.UserService.login(String, String)");
+			throw new AppException(
+					"com.ruanku.service.UserService.login(String, String)");
 		}
-		
+
 		return user;
-		
+
 	}
 }

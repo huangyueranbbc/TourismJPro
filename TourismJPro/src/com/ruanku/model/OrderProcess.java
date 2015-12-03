@@ -1,6 +1,6 @@
 package com.ruanku.model;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 /**
  * 订单流程表
@@ -13,7 +13,7 @@ public class OrderProcess {
 	private int order_id; // 订单ID相关联
 	private int user_id; // 用户ID相关联
 	private int type; // 操作类型 1下单，2支付，3受理接受，4受理拒绝，5取消订单
-	private Date dateTime; // 下订单的时间
+	private Timestamp dateTime; // 下订单的时间
 	private int del; // 是否删除 0未删除，1已删除
 
 	public int getID() {
@@ -48,11 +48,11 @@ public class OrderProcess {
 		this.type = type;
 	}
 
-	public Date getDateTime() {
+	public Timestamp getDateTime() {
 		return dateTime;
 	}
 
-	public void setDateTime(Date dateTime) {
+	public void setDateTime(Timestamp dateTime) {
 		this.dateTime = dateTime;
 	}
 

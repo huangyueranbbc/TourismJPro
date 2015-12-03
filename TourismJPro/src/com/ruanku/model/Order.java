@@ -1,5 +1,6 @@
 package com.ruanku.model;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -19,7 +20,7 @@ public class Order {
 	private int status; // 订单状态 1下单，2支付，3受理接受，4受理拒绝，5取消订单
 	private float amount; // 总金额 总金额=出发人数*单人价格
 	private String remark; // 备注
-	private String createTime; // 下订单的时间
+	private Timestamp createTime; // 下订单的时间
 	private int del; // 是否删除 0未删除，1已删除
 
 	public int getID() {
@@ -102,11 +103,11 @@ public class Order {
 		this.remark = remark;
 	}
 
-	public String getCreateTime() {
+	public Timestamp getCreateTime() {
 		return createTime;
 	}
 
-	public void setCreateTime(String createTime) {
+	public void setCreateTime(Timestamp createTime) {
 		this.createTime = createTime;
 	}
 

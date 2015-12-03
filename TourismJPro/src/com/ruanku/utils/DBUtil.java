@@ -21,6 +21,7 @@ public class DBUtil {
 	 * 开启并返回数据库连接
 	 */
 	public static Connection getConnection() {
+		System.out.println(url);
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");

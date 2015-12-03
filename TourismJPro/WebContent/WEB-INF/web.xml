@@ -44,4 +44,14 @@
     <servlet-name>LoginoutServlet</servlet-name>
     <url-pattern>/LoginoutServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddToursimServlet</display-name>
+    <servlet-name>AddToursimServlet</servlet-name>
+    <servlet-class>com.ruanku.web.AddToursimServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddToursimServlet</servlet-name>
+    <url-pattern>/AddToursimServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
