@@ -16,12 +16,32 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>ToRegisterServlet</display-name>
-    <servlet-name>ToRegisterServlet</servlet-name>
-    <servlet-class>com.ruanku.web.ToRegisterServlet</servlet-class>
+    <display-name>RegisterServlet</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.ruanku.web.RegisterServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ToRegisterServlet</servlet-name>
-    <url-pattern>/ToRegisterServlet</url-pattern>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.ruanku.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginoutServlet</display-name>
+    <servlet-name>LoginoutServlet</servlet-name>
+    <servlet-class>com.ruanku.web.LoginoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginoutServlet</servlet-name>
+    <url-pattern>/LoginoutServlet</url-pattern>
   </servlet-mapping>
 </web-app>

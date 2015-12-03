@@ -3,6 +3,7 @@ package com.ruanku.service;
 import com.ruanku.dao.UserDao;
 import com.ruanku.dao.impl.UserDaoImpl;
 import com.ruanku.model.User;
+import com.ruanku.model.UserBo;
 import com.ruanku.utils.AppException;
 
 public class UserService {
@@ -21,7 +22,7 @@ public class UserService {
 				flag = false;
 			} else {
 				// 如果不存在
-				flag = userDao.save(user);
+				flag = userDao.add(user);
 			}
 		} catch (AppException e) {
 			e.printStackTrace();
@@ -29,5 +30,18 @@ public class UserService {
 					"com.ruanku.service.UserService.register(User)");
 		}
 		return flag;
+	}
+
+	public UserBo login(String username,String password) throws AppException {
+		UserBo user=null;
+		try {
+			user = userDao.findUserByNameAndPwd(username,password);
+		} catch (AppException e) {
+			e.printStackTrace();
+			throw new AppException("com.ruanku.service.UserService.login(String, String)");
+		}
+		
+		return user;
+		
 	}
 }

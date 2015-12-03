@@ -26,7 +26,7 @@
 					<div class="reg-main">
 						<div class="reg-center">
 							<div class="reg-left">
-								<form id="loginform" name="loginform" action="userCenter.htm"
+								<form id="loginform" name="loginform" action="LoginServlet"
 									method="post">
 
 									<dl>

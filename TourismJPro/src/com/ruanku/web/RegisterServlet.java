@@ -17,14 +17,14 @@ import com.ruanku.utils.DBUtil;
 /**
  * Servlet implementation class ToRegisterServlet
  */
-public class ToRegisterServlet extends HttpServlet {
+public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private UserService userService = new UserService();
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public ToRegisterServlet() {
+	public RegisterServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -50,8 +50,6 @@ public class ToRegisterServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
 		request.setCharacterEncoding("utf-8");
-		// 创建连接开始注册
-		Connection connection = DBUtil.getConnection();
 		// 创建user对象并初始化
 		User user = new User();
 		user.setName(request.getParameter("name")); 

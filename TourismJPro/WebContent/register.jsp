@@ -37,7 +37,7 @@
 						<div class="reg-center">
 							<div class="reg-left">
 								<form id="registerform" method="post" name="registerform"
-									action="ToRegisterServlet">
+									action="RegisterServlet">
 									<dl>
 										<dt>注册新用户</dt>
 										<dd>
