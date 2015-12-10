@@ -8,7 +8,7 @@
     <description></description>
     <display-name>ToIndexServlet</display-name>
     <servlet-name>ToIndexServlet</servlet-name>
-    <servlet-class>com.ruanku.web.ToIndexServlet</servlet-class>
+    <servlet-class>com.ruanko.web.ToIndexServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ToIndexServlet</servlet-name>
@@ -18,7 +18,7 @@
     <description></description>
     <display-name>RegisterServlet</display-name>
     <servlet-name>RegisterServlet</servlet-name>
-    <servlet-class>com.ruanku.web.RegisterServlet</servlet-class>
+    <servlet-class>com.ruanko.web.RegisterServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>RegisterServlet</servlet-name>
@@ -28,7 +28,7 @@
     <description></description>
     <display-name>LoginServlet</display-name>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>com.ruanku.web.LoginServlet</servlet-class>
+    <servlet-class>com.ruanko.web.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
@@ -38,7 +38,7 @@
     <description></description>
     <display-name>LoginoutServlet</display-name>
     <servlet-name>LoginoutServlet</servlet-name>
-    <servlet-class>com.ruanku.web.LoginoutServlet</servlet-class>
+    <servlet-class>com.ruanko.web.LoginoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginoutServlet</servlet-name>
@@ -48,10 +48,300 @@
     <description></description>
     <display-name>AddToursimServlet</display-name>
     <servlet-name>AddToursimServlet</servlet-name>
-    <servlet-class>com.ruanku.web.AddToursimServlet</servlet-class>
+    <servlet-class>com.ruanko.web.AddToursimServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddToursimServlet</servlet-name>
     <url-pattern>/AddToursimServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToRegisterServlet</display-name>
+    <servlet-name>ToRegisterServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToRegisterServlet</servlet-name>
+    <url-pattern>/ToRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToLoginServlet</display-name>
+    <servlet-name>ToLoginServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToLoginServlet</servlet-name>
+    <url-pattern>/ToLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToAdminCenterServlet</display-name>
+    <servlet-name>ToAdminCenterServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToAdminCenterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToAdminCenterServlet</servlet-name>
+    <url-pattern>/ToAdminCenterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToUserCenterServlet</display-name>
+    <servlet-name>ToUserCenterServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToUserCenterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToUserCenterServlet</servlet-name>
+    <url-pattern>/ToUserCenterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToAddTourismServlet</display-name>
+    <servlet-name>ToAddTourismServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToAddTourismServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToAddTourismServlet</servlet-name>
+    <url-pattern>/ToAddTourismServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToAddTourismImagesServlet</display-name>
+    <servlet-name>ToAddTourismImagesServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToAddTourismImagesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToAddTourismImagesServlet</servlet-name>
+    <url-pattern>/ToAddTourismImagesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddTourismImagesServlet</display-name>
+    <servlet-name>AddTourismImagesServlet</servlet-name>
+    <servlet-class>com.ruanko.web.AddTourismImagesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddTourismImagesServlet</servlet-name>
+    <url-pattern>/AddTourismImagesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetTourismListServlet</display-name>
+    <servlet-name>GetTourismListServlet</servlet-name>
+    <servlet-class>com.ruanko.web.GetTourismListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetTourismListServlet</servlet-name>
+    <url-pattern>/GetTourismListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToTourismListServlet</display-name>
+    <servlet-name>ToTourismListServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToTourismListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToTourismListServlet</servlet-name>
+    <url-pattern>/ToTourismListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToGetTourismRuleListServlet</display-name>
+    <servlet-name>ToGetTourismRuleListServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToGetTourismRuleListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToGetTourismRuleListServlet</servlet-name>
+    <url-pattern>/ToGetTourismRuleListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetTourismRuleListServlet</display-name>
+    <servlet-name>GetTourismRuleListServlet</servlet-name>
+    <servlet-class>com.ruanko.web.GetTourismRuleListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetTourismRuleListServlet</servlet-name>
+    <url-pattern>/GetTourismRuleListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToSearchTourismServlet</display-name>
+    <servlet-name>ToSearchTourismServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToSearchTourismServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToSearchTourismServlet</servlet-name>
+    <url-pattern>/ToSearchTourismServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchTourismServlet</display-name>
+    <servlet-name>SearchTourismServlet</servlet-name>
+    <servlet-class>com.ruanko.web.SearchTourismServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchTourismServlet</servlet-name>
+    <url-pattern>/SearchTourismServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TourismDetailServlet</display-name>
+    <servlet-name>TourismDetailServlet</servlet-name>
+    <servlet-class>com.ruanko.web.TourismDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TourismDetailServlet</servlet-name>
+    <url-pattern>/TourismDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PlaceOrderServlet</display-name>
+    <servlet-name>PlaceOrderServlet</servlet-name>
+    <servlet-class>com.ruanko.web.PlaceOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaceOrderServlet</servlet-name>
+    <url-pattern>/PlaceOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToPersonServlet</display-name>
+    <servlet-name>ToPersonServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToPersonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToPersonServlet</servlet-name>
+    <url-pattern>/ToPersonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateUserServlet</display-name>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>com.ruanko.web.UpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/UpdateUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetUserOrderListServlet</display-name>
+    <servlet-name>GetUserOrderListServlet</servlet-name>
+    <servlet-class>com.ruanko.web.GetUserOrderListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetUserOrderListServlet</servlet-name>
+    <url-pattern>/GetUserOrderListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PaymentServlet</display-name>
+    <servlet-name>PaymentServlet</servlet-name>
+    <servlet-class>com.ruanko.web.PaymentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentServlet</servlet-name>
+    <url-pattern>/PaymentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>handleOrderServlet</display-name>
+    <servlet-name>handleOrderServlet</servlet-name>
+    <servlet-class>com.ruanko.web.handleOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>handleOrderServlet</servlet-name>
+    <url-pattern>/handleOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetUserListServlet</display-name>
+    <servlet-name>GetUserListServlet</servlet-name>
+    <servlet-class>com.ruanko.web.GetUserListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetUserListServlet</servlet-name>
+    <url-pattern>/GetUserListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ManagerUserServlet</display-name>
+    <servlet-name>ManagerUserServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ManagerUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerUserServlet</servlet-name>
+    <url-pattern>/ManagerUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToPaymentServlet</display-name>
+    <servlet-name>ToPaymentServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ToPaymentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToPaymentServlet</servlet-name>
+    <url-pattern>/ToPaymentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddCommentServlet</display-name>
+    <servlet-name>AddCommentServlet</servlet-name>
+    <servlet-class>com.ruanko.web.AddCommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCommentServlet</servlet-name>
+    <url-pattern>/AddCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetCommentList</display-name>
+    <servlet-name>GetCommentList</servlet-name>
+    <servlet-class>com.ruanko.web.GetCommentList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetCommentList</servlet-name>
+    <url-pattern>/GetCommentList</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetUserCommentableList</display-name>
+    <servlet-name>GetUserCommentableList</servlet-name>
+    <servlet-class>com.ruanko.web.GetUserCommentableList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetUserCommentableList</servlet-name>
+    <url-pattern>/GetUserCommentableList</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ManagerUserCommentServlet</display-name>
+    <servlet-name>ManagerUserCommentServlet</servlet-name>
+    <servlet-class>com.ruanko.web.ManagerUserCommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerUserCommentServlet</servlet-name>
+    <url-pattern>/ManagerUserCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RemoveCommentServlet</display-name>
+    <servlet-name>RemoveCommentServlet</servlet-name>
+    <servlet-class>com.ruanko.web.RemoveCommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveCommentServlet</servlet-name>
+    <url-pattern>/RemoveCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetBillListServlet</display-name>
+    <servlet-name>GetBillListServlet</servlet-name>
+    <servlet-class>com.ruanko.web.GetBillListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetBillListServlet</servlet-name>
+    <url-pattern>/GetBillListServlet</url-pattern>
   </servlet-mapping>
 </web-app>

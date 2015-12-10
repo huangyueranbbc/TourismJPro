@@ -1,5 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -16,7 +23,7 @@
 		<!-- header end -->
 		<!-- navmenu start -->
 		<%@ include file="/common_navmenu.jspf"%>
-		<!-- navmenu end -->
+		<!-- navmenu end --> 
 
 		<!-- main start -->
 		<div id="main">
@@ -31,58 +38,26 @@
 						</ul>
 					</div>
 				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
+				 
+				<!-- 跟团游 -->
+				<c:forEach var="tourisms" items="${tourisms0 }">
+				<div class="tbox"> 
+					<div> 
+						<a href="TourismDetailServlet?tourismid=${tourisms.tourism.ID }"> <img class="unit-pic"
+							style="width: 227px; height: 151px;" src="<%=basePath %>${tourisms.tourismImages[0].big}" />
 						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
+					</div> 
+					<div>${tourisms.tourism.title }</div>
+ 	
 					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
-						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
-					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
-						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
-					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
-						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
-					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
+						<div>￥${tourisms.tourism.basePrice }起</div>
+						<div class="satisfaction">满意度:${tourisms.satisfactionPercent }</div>
+					</div> 
+				</div>  
+				</c:forEach>
+								
+				
+				
 			</div>
 
 			<div id="main-list">
@@ -96,58 +71,23 @@
 						</ul>
 					</div>
 				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
+				<!-- 自助游 --> 
+				<c:forEach var="tourisms" items="${tourisms1 }">
+				<div class="tbox"> 
+					<div> 
+						<a href="TourismDetailServlet?tourismid=${tourisms.tourism.ID }"> <img class="unit-pic"
+							style="width: 227px; height: 151px;" src="<%=basePath %>${tourisms.tourismImages[0].big}" />
 						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
+					</div> 
+					<div>${tourisms.tourism.title }</div>
+ 	
 					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
-						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
-					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
-						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
-					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
-						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
-					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
+						<div>￥${tourisms.tourism.basePrice }起</div>
+						<div class="satisfaction">满意度:${tourisms.satisfactionPercent }</div>
+					</div> 
+				</div>  
+				</c:forEach>
+				
 			</div>
 
 			<div id="main-list">
@@ -161,58 +101,23 @@
 						</ul>
 					</div>
 				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
+				<!-- 热门游 -->  
+				<c:forEach var="tourisms" items="${tourismsHot }">
+				<div class="tbox"> 
+					<div> 
+						<a href="TourismDetailServlet?tourismid=${tourisms.tourism.ID }"> <img class="unit-pic"
+							style="width: 227px; height: 151px;" src="<%=basePath %>${tourisms.tourismImages[0].big}" />
 						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
+					</div> 
+					<div>${tourisms.tourism.title }</div>
+ 	
 					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
-						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
-					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
-						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
-					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
-				<div class="tbox">
-					<div>
-						<a href="tourismDetail.htm"> <img class="unit-pic"
-							style="width: 227px; height: 151px;" src="images/002.jpg" />
-						</a>
-					</div>
-					<div>端午>>海南五日游</div>
-
-					<div class="saleprice">
-						<div>￥168起</div>
-						<div class="satisfaction">满意度:95%</div>
-					</div>
-				</div>
+						<div>￥${tourisms.tourism.basePrice }起</div>
+						<div class="satisfaction">满意度:${tourisms.satisfactionPercent }</div>
+					</div> 
+				</div>  
+				</c:forEach>
+				
 			</div>
 		</div>
 		<!-- main end-->
